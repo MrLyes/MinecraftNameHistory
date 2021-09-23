@@ -9,8 +9,7 @@ def open_win():
 
 def main(name):
 	pseu = 0
-	#Request name data
-	code = requests.get("https://api.ashcon.app/mojang/v2/user/" + name).status_code
+	code = requests.get("https://api.ashcon.app/mojang/v2/user/" + name).status_code #Request name data
 	if code == 200:
 		resp = requests.get("https://api.ashcon.app/mojang/v2/user/" + name)		
 		data = json.loads(resp.text)
@@ -21,7 +20,7 @@ def main(name):
 		else:
 			print(f"[{Fore.GREEN}*{Fore.LIGHTWHITE_EX}] Created the: " + data["created_at"])
 			print(f"\n[{Fore.GREEN}+{Fore.LIGHTWHITE_EX}] Name History: \n")
-		for username in data["username_history"]:#Get username history
+		for username in data["username_history"]: #Get username history
 			pseu = pseu + 1
 			try:
 				chang = username["changed_at"].replace('T', ' at ').replace('.000Z', '')
@@ -37,4 +36,3 @@ while True:
 	minecraft_name = input(f"[{Fore.GREEN}>{Fore.LIGHTWHITE_EX}] Pseudo Minecraft : ")
 	main(minecraft_name)
 	input('\nPress [Enter] For Retry')
-
