@@ -17,18 +17,14 @@ allowing you to find the old pseudo of a Minecraft account
 
 ### <p align="center">⭐ Features ⭐</p>
 
-<br><br>
-<strong>+ Fast</strong>
-<br>
-<strong>+ Easy to use</strong>
-<br>
-<strong>+ Find the old pseudo of a Minecraft account</a></strong>
-<br>
-<strong>+ Get UUID</strong>
-<br>
-<strong>+ Date of account creation</strong>
-<br>
 
+- [x] Fast</strong>
+- [x] Easy to use</strong>
+- [x] Find the old pseudo of a Minecraft account</a></strong>
+- [x] Get UUID</strong>
+- [x] Date of account creation</strong>
+
+<br><br>
 <p align = "center">
 <img src="https://cdn.discordapp.com/attachments/871537063143542835/890559016537817138/MrLyes.gif">
 <br><br>
